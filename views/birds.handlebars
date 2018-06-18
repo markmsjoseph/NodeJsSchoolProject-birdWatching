@@ -1,0 +1,27 @@
+<h3>Bird Sightings</h3>
+
+<ul>
+{{#each birds}}
+<ul>
+	<font color="yellow">
+	{{_view.contentIndex}}{{this.number}}
+	</font>
+	 x
+   {{_view.contentIndex}}{{this.name}}
+</ul>
+{{/each}}
+
+</ul>
+
+
+
+<form method="POST" action="">
+<strong>Add another bird sighting to list</strong>
+<br>
+<input type="text" name="birds">
+<br>
+<input type="submit" value="Add Another Bird">
+</form>
+
+<a href="{{url1}}">Settings</a>
+<a href="{{url2}}">Home</a>
